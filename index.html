@@ -2,27 +2,83 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="static/ascii.css">
+    <link rel="stylesheet" href="static/main.css">
 
-  <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-  <!--[if IE]>
+    <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-  <p>Ostrasky serfovy klub!!!</p>
-  <img alt="logo" src="media/logo-480x480.png"/>
+
+    <header class="container" id="header">
+        <div class="left">
+            <img alt="Top logo" width="48px" src="media/logo-120x120.png" />
+        </div>
+        <div class="right">
+            <a href="#o-klubu"><button class="ascii-btn" btn-label="O klubu"></button></a>
+            <a href="#pridej-se"><button class="ascii-btn" btn-label="Zapoj se!"></button></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="section" id="o-klubu">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h1>Ostravsky serfovy klub!!!</h1>
+                    <small>(pyčo)</small>
+                    <p>Štípání oceánu v očích, tělo unavené pádlováním, a nakonec zasloužené pivo na pláži. Ať už jsi serfování zažil, nebo by tě jednou lákalo, tento klub je něco pro tebe.
+                    </p>
+                    <p>Inspirován <a href="https://www.prazskejserf.cz/">Pražskou</a> a <a href="https://www.brnenskesurfoveklub.cz/">Brněnskou</a> komunitou, (v tuhle chvíli neformální) sdružení s cílem dát dohromady partu lidí kolem serfování z Ostravy a okolí.</p>
+                    <p>Přečkej suché období, dej se do formy před dalším výjezdem a poznej kámoše na další trip. Vítáni jsou jak vlnami omlácení matadoři, tak lidé kteří na prkně nikdy nestáli, ale říkají si "třeba jednou...?"</p>
+                </div>
+                <div class="col s12 m6">
+                    <img alt="logo" style="max-width: 480px;display:block;margin:auto;" src="media/logo-480x480.png" />
+                </div>
+            </div>
+        </div>
+        <div class="ascii-divider"></div>
+        <div class="section" id="pridej-se">
+            <div class="row">
+                <div class="col s12">
+                    <h1>Zapoj se!</h1>
+                </div>
+                <div class="col s12 m6">
+                    <h2>Přijď</h2>
+                    <p>Sleduj aktuální dění ve skupině na <a href="">facebooku</a> a <a href="">instagramu</a><br/>Podle zájmu se pořádají tréninky a výlety, pádlování na Hlučíně, spanilé jízdy na longboardu,...</p>
+                    Pro velké akce a důležité informace existuje mailingový list
+                    <a href="https://gmail.us19.list-manage.com/subscribe/post?u=550f845baa8503de769d6981d&amp;id=72b42fa7d7"><button id="mc-embedded-subscribe" name="subscribe" type="submit" class="ascii-btn" btn-label="Přihlásit k newsletteru" ></button></a>
+                </div>
+                <div class="col s12 m6">
+                    <h2>Vymysli</h2>
+                    <ul>
+                        <li>Máš zkušenosti se serfování a chtěl bys je předat dál? Udělej přednášku</li>
+                        <li>Dokážeš vést trénink (jóga, acrojóga, kruháč,...)? Uspořádej ho!</li>
+                        <li>Jedeš na trip, ale nemáš s kým? Dej o sobě vědet!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <small>
+                Vytvořeno 2020 pomocí <a href="https://github.com/AppiChudilko/ascii">tohoto frameworku</a>. Kód je na <a href="https://github.com/pocin/ostravsky-serfovy-klub">githubu</a>
+            </small>
+        </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="static/ascii.js"></script>
 
 </html>
